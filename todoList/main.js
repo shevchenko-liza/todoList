@@ -45,7 +45,7 @@ todo.addEventListener('change', function(event) {
 
 todo.addEventListener('contextmenu', function(event) {
     event.preventDefault();
-    todoList.forEach(function(item,i) {
+    todoList.forEach(function(item, i) {
         if (item.todo === event.target.innerHTML) {
             if (event.ctrlKey || event.metaKey) {
                 todoList.splice(i, 1)
